@@ -1,0 +1,19 @@
+# Node
+node_modules/
+dist/
+.angular/
+
+# Java / Maven
+target/
+*.jar
+*.class
+
+# Env secrets
+.env
+application-local.properties
+application-secrets.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/settings.json
