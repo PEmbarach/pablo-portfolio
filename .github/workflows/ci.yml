@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, dev]
+  pull_request:
+    branches: [ main, dev]
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    stpes:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm install
+
+      - name: Build frontend
+        working-directory: frontend
+        run: npm run build
+
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actuions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Run tests
+        working-directory: backend/portfolio
+        run: mvnw test
+     
