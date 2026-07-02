@@ -7,7 +7,7 @@ import { IonButton, IonAccordion, IonHeader, IonToolbar, IonTitle, IonCard, IonI
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss'],
   standalone: true,
-imports: [CommonModule, IonButton, IonAccordion, IonHeader, IonToolbar, IonTitle, IonCard, IonImg, IonCardTitle, IonCardContent, IonCardSubtitle, IonAvatar],
+  imports: [CommonModule, IonButton, IonAccordion, IonHeader, IonToolbar, IonTitle, IonCard, IonImg, IonCardTitle, IonCardContent, IonCardSubtitle, IonAvatar],
 })
 export class HeroComponent {
 

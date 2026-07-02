@@ -1,3 +1,28 @@
-<p>
-  projects works!
-</p>
+<section id="projects">
+  <!-- heading -->
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    @for (project of projects; track project.title) {
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ project.title }}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>{{ project.description }}</p>
+        <div>
+          @for (tag of project.tags; track tag) {
+          <ion-chip>
+            <ion-label>{{ tag }}</ion-label>
+          </ion-chip>
+          }
+        </div>
+      </ion-card-content>
+
+      <ion-button expand="full" fill="outline" color="primary" [href]="project.githubUrl" target="_blank">
+        View Project
+      </ion-button>
+    </ion-card>
+    }
+  </div>
+</section>
