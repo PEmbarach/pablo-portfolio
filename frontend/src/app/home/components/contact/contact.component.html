@@ -13,11 +13,6 @@
       <ion-label position="floating">Message</ion-label>
       <ion-textarea formControlName="message"></ion-textarea>
     </ion-item>
-    @if (submitSuccess) {
-    <p>Your message has been sent successfully!</p>
-    } @else if (errorMessage) {
-    <p>{{ errorMessage }}</p>
-    }
     <ion-button expand="full" type="submit" [disabled]="isLoading || contactForm.invalid">
       @if (isLoading) {
       <ion-spinner name="crescent"></ion-spinner>
