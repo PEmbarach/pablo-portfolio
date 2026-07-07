@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { IonButton, IonAccordion, IonHeader, IonToolbar, IonTitle, IonCard, IonImg, IonCardTitle, IonCardContent, IonCardSubtitle, IonAvatar } from '@ionic/angular/standalone';
+import { IonButton } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss'],
   standalone: true,
-  imports: [CommonModule, IonButton, IonAccordion, IonHeader, IonToolbar, IonTitle, IonCard, IonImg, IonCardTitle, IonCardContent, IonCardSubtitle, IonAvatar],
+  imports: [CommonModule, IonButton],
 })
 export class HeroComponent {
 
