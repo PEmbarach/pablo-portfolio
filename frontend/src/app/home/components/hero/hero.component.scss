@@ -94,6 +94,17 @@
         .hero-buttons {
             display: flex;
             gap: 0.5rem;
+
+            ion-button {
+                --background: transparent;
+                --background-hover: rgba(0, 188, 212, 0.1);
+                --color: var(--color-accent);
+                --border-color: var(--color-accent);
+                --border-width: 1px;
+                --border-style: solid;
+                --border-radius: 6px;
+                font-size: 0.8rem;
+            }
         }
     }
 }
