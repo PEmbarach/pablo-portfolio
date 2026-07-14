@@ -30,7 +30,7 @@ export class ProjectsComponent {
       title: 'MovieApp',
       description: 'A mobile application built with Ionic Framework v7.2.0 and Angular (Standalone Components) as part of the Higher Diploma in Science – Computing (Software Development) at Atlantic Technological University.',
       tags: ['Angular', 'Ionic', 'TypeScript', 'API'],
-      githubUrl: 'https://github.com/PEmbarach/MovieApp'
+      githubUrl: 'https://github.com/PEmbarach/MovieApp-MADATU'
     },
     {
       title: 'Project Cauldron',

@@ -15,7 +15,7 @@ export class HeroComponent {
   role = 'Full Stack Developer';
   tagline = ' Java - Angular - Typescript - Ionic - React - Node.js - SQL';
   githubUrl = 'https://github.com/PEmbarach';
-  linkedinUrl = 'https://www.linkedin.com/in/pablo-embarach/';
+  linkedinUrl = 'https://www.linkedin.com/in/pablo-embarach-boeira/';
 
   scrollTo(sectionId: string) {
     const element = document.getElementById(sectionId);
