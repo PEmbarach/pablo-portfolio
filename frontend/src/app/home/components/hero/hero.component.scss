@@ -1,97 +1,111 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+:host {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 2rem;
-    background: rgba(255, 255, 255, 0.95);
-    border-bottom: 1px solid #eee;
     z-index: 100;
-
-    .logo {
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: #333;
-    }
-
-    .nav-links {
-        display: flex;
-        gap: 1.5rem;
-
-        a {
-            cursor: pointer;
-            color: #666;
-            text-decoration: none;
-            font-size: 0.9rem;
-
-            &:hover {
-                color: #000;
-            }
-        }
-    }
+    background: rgba(15, 25, 35, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .hero-section {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    padding: 120px 4rem 4rem;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
 
-    .avatar {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        background: #7F77DD;
-        color: white;
+    .hero-left {
         display: flex;
         align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        font-weight: bold;
-        flex-shrink: 0;
-    }
+        gap: 1rem;
 
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--color-accent);
+            color: #0f1923;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .hero-info {
+            h1 {
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: var(--color-text-primary);
+                margin: 0;
+            }
+
+            .role {
+                font-size: 0.8rem;
+                color: var(--color-accent);
+                margin: 0;
+            }
+        }
+
+        .role-row {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
 
         .available-badge {
-            display: inline-block;
-            background: #E6F1FB;
-            color: #185FA5;
-            padding: 4px 12px;
+            font-size: 0.65rem;
+            font-weight: 600;
+            background: rgba(0, 188, 212, 0.15);
+            color: var(--color-accent);
+            padding: 2px 8px;
             border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            width: fit-content;
+            border: 1px solid rgba(0, 188, 212, 0.3);
+        }
+    }
+
+    .hero-right {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+
+            a {
+                font-size: 0.85rem;
+                color: var(--color-text-secondary);
+                text-decoration: none;
+                cursor: pointer;
+                transition: color 0.2s;
+
+                &:hover {
+                    color: var(--color-accent);
+                }
+            }
         }
 
-        h1 {
-            font-size: 2rem;
-            font-weight: 500;
-            margin: 0;
-        }
-
-        .role {
-            color: #666;
-            margin: 0;
-        }
-
-        .tagline {
-            color: #999;
-            margin: 0;
+        .hero-buttons {
+            display: flex;
+            gap: 0.5rem;
         }
     }
 }
 
-@media (max-width: 600px) {
-  .hero-section {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 100px 1.5rem 2rem;
-  }
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 0.75rem 1.5rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        .hero-right .hero-buttons {
+            display: none;
+        }
+    }
 }

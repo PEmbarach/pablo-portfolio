@@ -1,18 +1,49 @@
-.contact-section {
-  margin: 0 auto;
-  padding: 4rem 2rem;
+:host {
+  display: block;
+  padding: 4rem 1rem;
   max-width: 600px;
+  margin: 0 auto;
+}
 
-  h1 {
-    margin-bottom: 2rem;
-  }
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
 
-  ion-item {
-    margin-bottom: 12px;
-    --border-radius: 4px;
-  }
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0 0 0.5rem;
+}
 
-  ion-button {
-    margin-top: 1rem;
-  }
+.contact-subtitle {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+ion-item {
+  --background: var(--color-surface);
+  --border-color: var(--color-border);
+  --color: var(--color-text-primary);
+  --border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+ion-label {
+  --color: var(--color-text-secondary) !important;
+}
+
+ion-button {
+  --background: var(--color-accent);
+  --color: #0f1923;
+  --border-radius: 8px;
+  font-weight: 600;
+  margin-top: 1rem;
+  width: 100%;
 }

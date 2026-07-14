@@ -1,24 +1,20 @@
-<nav class="navbar">
-  <span class="logo">PE</span>
-  <div class="nav-links">
-    <a (click)="scrollTo('projects')">Projects</a>
-    <a (click)="scrollTo('contact')">Get in touch</a>
-    <a [href]="githubUrl" target="_blank">GitHub</a>
-  </div>
-</nav>
-
-<section class="hero-section">
-  <div class="avatar">{{ name[0] }}{{ name.split(' ')[1][0] }}</div>
-  <div class="hero-content">
-    <div class="available-badge">Available for work · Dublin, IE</div>
-    <h1>{{ name }}</h1>
-    <p class="role">{{ role }}</p>
-    <p class="tagline">{{ tagline }}</p>
-    <div class="hero-buttons">
-      <ion-button (click)="scrollTo('projects')">View projects</ion-button>
-      <ion-button fill="outline" (click)="scrollTo('contact')">Get in touch</ion-button>
-      <ion-button fill="outline" [href]="githubUrl" target="_blank">GitHub</ion-button>
-      <ion-button fill="outline" [href]="linkedinUrl" target="_blank">LinkedIn</ion-button>
+<header class="hero-section">
+  <div class="hero-left">
+    <div class="avatar">{{ name[0] }}{{ name.split(' ')[1][0] }}</div>
+    <div class="hero-info">
+      <h1>{{ name }}</h1>
+      <p class="role">{{ role }}</p>
+      <span class="available-badge">Available for work</span>
     </div>
   </div>
-</section>
+  <div class="hero-right">
+    <nav class="nav-links">
+      <a (click)="scrollTo('projects')">Projects</a>
+      <a (click)="scrollTo('contact')">Contact</a>
+    </nav>
+    <div class="hero-buttons">
+      <ion-button size="small" [href]="githubUrl" target="_blank">GitHub</ion-button>
+      <ion-button size="small" fill="outline" [href]="linkedinUrl" target="_blank">LinkedIn</ion-button>
+    </div>
+  </div>
+</header>

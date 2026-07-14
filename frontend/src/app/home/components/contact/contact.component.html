@@ -1,5 +1,7 @@
 <section id="contact" class="contact-section">
-  <h1>Contact Me</h1>
+  <p class="section-label">Contact</p>
+  <h1>Get in touch</h1>
+  <p class="contact-subtitle">Have a role in mind or just want to say hello? My inbox is always open.</p>
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <ion-item>
       <ion-label position="floating">Name</ion-label>
@@ -11,13 +13,13 @@
     </ion-item>
     <ion-item>
       <ion-label position="floating">Message</ion-label>
-      <ion-textarea formControlName="message"></ion-textarea>
+      <ion-textarea formControlName="message" rows="4"></ion-textarea>
     </ion-item>
     <ion-button expand="full" type="submit" [disabled]="isLoading || contactForm.invalid">
       @if (isLoading) {
-      <ion-spinner name="crescent"></ion-spinner>
+        <ion-spinner name="crescent"></ion-spinner>
       } @else {
-      Send Message
+        Send message
       }
     </ion-button>
   </form>
