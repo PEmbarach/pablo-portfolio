@@ -25,21 +25,37 @@
 ## Project Structure
 
 pablo-portfolio/
+
 ├── frontend/ # Angular 21 + Ionic 7 SPA
+
 │ ├── src/app/
+
 │ │ └── home/
+
 │ │ └── components/
+
 │ │ ├── hero/ # Fixed header with nav
+
 │ │ ├── projects/ # Project cards grid
+
 │ │ └── contact/ # Reactive form + HttpClient
+
 │ └── src/environments/ # Dev and prod API URLs
+
 └── backend/
+
 └── portfolio/ # Spring Boot 3 REST API
+
 └── src/main/java/
+
 └── com/pabloembarach/portfolio/
+
 ├── controller/ # ContactController
+
 ├── service/ # EmailService
+
 ├── dto/ # ContactRequest (validated)
+
 └── config/ # CORS configuration
 
 ## Local Development
