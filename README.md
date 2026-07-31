@@ -1,4 +1,4 @@
-# Pablo Embarach — Portfolio
+# Pablo Embarach - Portfolio
 
 > Full stack personal portfolio built with Angular 21 + Spring Boot, 
 > self-hosted on Oracle Cloud.
@@ -17,10 +17,10 @@
 ## Features
 
 - 🎨 Responsive single-page design with dark slate + cyan theme
-- 📬 Working contact form — form submissions delivered via Gmail SMTP
+- 📬 Working contact form - form submissions delivered via Gmail SMTP
 - 🔒 HTTPS with auto-renewing Let's Encrypt certificate
-- ⚙️ Backend runs as a systemd service — survives reboots automatically
-- 🚀 CI pipeline runs on every push — builds frontend and runs backend tests
+- ⚙️ Backend runs as a systemd service - survives reboots automatically
+- 🚀 CI pipeline runs on every push - builds frontend and runs backend tests
 
 ## Project Structure
 
@@ -75,6 +75,7 @@ mvn spring-boot:run      # runs on http://localhost:8080
 **Environment variables required for backend:**
 
 MAIL_USERNAME=your.email@gmail.com
+
 MAIL_PASSWORD=your-gmail-app-password
 
 ## Deployment
