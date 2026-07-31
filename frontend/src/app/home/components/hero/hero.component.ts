@@ -22,4 +22,9 @@ export class HeroComponent {
     element?.scrollIntoView({ behavior: 'smooth' });
   }
 
+  onImageError(event: any) {
+    event.target.style.display = 'none';
+    event.target.nextElementSibling.style.display = 'flex';
+  }
 }
+

@@ -1,6 +1,11 @@
 <header class="hero-section">
   <div class="hero-left">
-    <div class="avatar">{{ name[0] }}{{ name.split(' ')[1][0] }}</div>
+    <div class="avatar">
+      <img src="assets/icon/Profile.png" alt="Pablo Embarach" (error)="onImageError($event)" />
+      <span class="avatar-initials" style="display:none">
+        {{ name[0] }}{{ name.split(' ')[1][0] }}
+      </span>
+    </div>
     <div class="hero-info">
       <h1>{{ name }}</h1>
       <p class="role">{{ role }}</p>
